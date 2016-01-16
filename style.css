@@ -1,8 +1,8 @@
 #template {
 	/*border: 1px solid black;*/
 	text-align: center;
-	/*background: red;*/
-	min-width: 450px;
+	background-color: #c4e3ed;
+	border: 1px solid black;
 }
 
 .cityState {
@@ -13,4 +13,38 @@
 .iconT {
 	height: 150px;
 	margin-top: -20px;
+}
+
+#template10 {
+	display: none;
+}
+
+.days10 {
+	background: #ebebe0;
+	border: 1px solid black;
+}
+
+.flexCondition {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+body {
+	background-color: lightblue;
+}
+
+.cityState {
+	margin-bottom: 30px;
+}
+
+input {
+	/*background-color: */
+}
+
+.zipEnter {
+	margin-top: 20px;
+	background: #c4e3ed;
+	display: inline-block;
+	padding: 5px;
 }
