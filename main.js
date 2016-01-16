@@ -13,7 +13,6 @@ $.ajax({
 });
 
 function getWeather(data) {
-	console.log(data.location.zip);
 	zip = data.location.zip;
 	$('#zip').val(zip);
 	getForecast();
@@ -30,7 +29,6 @@ function getForecast() {
 		contenttype: "json",
 		type: "GET",
 		success: function(data) {
-			console.log(zip);
 			forecast(data);
 		},
 	});
@@ -40,7 +38,6 @@ function getForecast() {
 		contenttype: "json",
 		type: "GET",
 		success: function(data) {
-			console.log(zip);
 			today(data);
 		},
 	});
@@ -57,7 +54,6 @@ function today(data) {
 
 function forecast(data) {
 	locObj = data.forecast.simpleforecast.forecastday;
-	console.log(locObj);
 	locObj.forEach(function(day, i) {
 		var $tr = $('#template10').clone();
 		$tr.removeAttr('id').addClass('days10');
@@ -71,4 +67,5 @@ function forecast(data) {
 		$('#addDay').append($tr);
 	});
 }
+
 });
