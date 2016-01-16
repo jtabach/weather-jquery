@@ -34,6 +34,7 @@ function getForecast() {
 			forecast(data);
 		},
 	});
+	// Current Forecast
 	$.ajax({
 		url: "http://api.wunderground.com/api/e58567a633f4600c/conditions/q/" + zip + ".json",
 		contenttype: "json",
@@ -45,8 +46,6 @@ function getForecast() {
 	});
 }
 
-
-
 function today(data) {
 	var current = data.current_observation;
 	$('.cityState').text(current.display_location.full + ", " + current.display_location.zip);
@@ -55,8 +54,6 @@ function today(data) {
 	$('.condition').text(current.temp_f + "F,  " + current.weather);
 	$('.humidity').text(current.relative_humidity);
 }
-
-
 
 function forecast(data) {
 	locObj = data.forecast.simpleforecast.forecastday;
@@ -73,23 +70,5 @@ function forecast(data) {
 		$tr.find('.max10').text(day.high.fahrenheit);
 		$('#addDay').append($tr);
 	});
-	// $currentTemp = $('<h1>').text(locObj.)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
-
