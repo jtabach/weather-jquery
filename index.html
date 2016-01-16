@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row col-md-offset-3">
+			<label for="">Zip Code: </label>
+			<input id="zip" type="text">
+			<button>Get Weather</button>
+		</div>
+		<div class="row col-md-offset-3 col-md-6" id="template">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="cityState"></h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="date"></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-3">
+					<img alt="" class="iconT">
+				</div>
+				<div class="col-md-offset-1 col-md-5">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="condition"></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Humidity: <span class="humidity"></span></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row col-md-offset-2 col-md-8">
+			<div class="row">
+				<h1 class="text-center">10 Day Forecast</h1></div>
+			<div class="col-md-6">
+
+				<div class="row">
+					<div>
+						<h2 class="text-center date10">January 16th, 2015</h2>
+					</div>
+				</div>
+				<div class="row" id="template10">
+					<div class="col-md-6">
+						<img src="http://icons.wxug.com/i/c/k/nt_cloudy.gif" alt="">
+					</div>
+					<div class="col-md-6">
+						<h3 class="condition10"></h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<h3>low: <span class="min10"></span></h3>
+					</div>
+					<div class="col-md-6">
+						<h3>high: <span class="max10"></span></h3>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://momentjs.com/downloads/moment.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

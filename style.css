@@ -1,0 +1,16 @@
+#template {
+	/*border: 1px solid black;*/
+	text-align: center;
+	/*background: red;*/
+	min-width: 450px;
+}
+
+.cityState {
+	/*border-bottom: 1px solid black;*/
+	text-decoration: underline;
+}
+
+.iconT {
+	height: 150px;
+	margin-top: -20px;
+}
